@@ -1,0 +1,18 @@
+# Arquivos temporários
+node_modules/
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de compilação
+dist/
+build/
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de dependências
+package-lock.json
+yarn.lock
