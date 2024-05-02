@@ -37,7 +37,7 @@ Antes de rodar a aplicação, certifique-se de ter o seguinte instalado em sua m
 Para rodar a aplicação localmente, execute o seguinte comando:
 
 ```bash
-   npm start
+   npm run start
 ```
 
 
@@ -51,3 +51,6 @@ A documentação da API está disponível na rota `/api-docs`. Você pode acess�
 
 Para rodar os testes automatizados, execute o seguinte comando:
 
+```bash
+   npm run test
+```
