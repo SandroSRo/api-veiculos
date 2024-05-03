@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-
+require('dotenv').config();
 export async function connectDB(): Promise<void> {
   try {
-    await mongoose.connect('mongodb+srv://sandro:qweasd123@cluster0.udyx8up.mongodb.net/veiculos');
+    await mongoose.connect(process.env.URL_MONGO);
     console.log('Conexão estabelecida com sucesso');
   } catch (error) {
     console.error('Erro de conexão:', error);

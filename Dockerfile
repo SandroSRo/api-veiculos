@@ -1,13 +1,14 @@
+
 FROM node:latest
 
 WORKDIR /app
 
 COPY package*.json ./
 
+COPY tsconfig.json ./tsconfig.json
+
 RUN npm install
 
 COPY . .
 
-EXPOSE 3000
-
-CMD ["node", "app.js"]
+CMD ["npm", "run", "start"]

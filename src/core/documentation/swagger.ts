@@ -1,4 +1,3 @@
-import { title } from 'process';
 import swaggerJsdoc from 'swagger-jsdoc';
 
 
@@ -17,7 +16,7 @@ const options = {
       },
     ],
   },
-  apis: ['./src/routes/*.ts'],
+  apis: ['./src/interfaces/routes/*.ts'],
 };
 
 const specs = swaggerJsdoc(options);

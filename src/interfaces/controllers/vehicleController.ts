@@ -1,12 +1,12 @@
 import { NextFunction } from './../../../node_modules/@types/express-serve-static-core/index.d';
 import { Request, Response } from 'express';
-import { CreateVehicleDTO } from '../../dtos/createVehicleDTO';
+import { CreateVehicleDTO } from '../dtos/createVehicleDTO';
 import CreateVehicle from '../../use_cases/vehicules/createVehicule';
 import FindVehicle from '../../use_cases/vehicules/findVeicules';
 import ListVehicle from '../../use_cases/vehicules/listVehicules';
 import DeleteVehicle from '../../use_cases/vehicules/deleteVehicule';
 import UpdateVehicle from '../../use_cases/vehicules/updateVehicules';
-import { UpdateVehicleDTO } from '../../dtos/updateVehicleDTO';
+import { UpdateVehicleDTO } from '../dtos/updateVehicleDTO';
 import { validate } from 'class-validator';
 
 

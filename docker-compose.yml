@@ -1,13 +1,14 @@
 version: "3"
 services:
   web:
-    build: .
+    build:
+      context: .
     ports:
       - "3000:3000"
     volumes:
       - .:/app
     environment:
-      - MONGO_URI=mongodb://mongo:27017/veichules
+      - MONGO_URI=mongodb://mongo:27017/vehicules
     depends_on:
       - mongo
   mongo:

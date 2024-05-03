@@ -15,7 +15,7 @@ Antes de rodar a aplicação, certifique-se de ter o seguinte instalado em sua m
 1. Clone este repositório:
 
 ```bash
-   git clone https://github.com/seu-usuario/api-veiculos.git
+   git clone https://github.com/sandrorock/api-veiculos.git
 ```
 
 2. Navegue até o diretório do projeto:
@@ -40,6 +40,13 @@ Para rodar a aplicação localmente, execute o seguinte comando:
    npm run start
 ```
 
+## Rodando a aplicação via docker
+
+Para rodar a aplicação com docker, execute o seguinte comando:
+
+```bash
+   docker-compose up
+```
 
 Isso iniciará o servidor Express na porta especificada no arquivo `.env`.
 
