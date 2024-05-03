@@ -32,12 +32,12 @@ Antes de rodar a aplicação, certifique-se de ter o seguinte instalado em sua m
 
 4. Renomeie o arquivo `.env.example` para `.env` e ajuste as variáveis de ambiente conforme necessário.
 
-## Rodando a aplicação
+## Rodando a aplicação DEV
 
 Para rodar a aplicação localmente, execute o seguinte comando:
 
 ```bash
-   npm run start
+   npm run dev
 ```
 
 ## Rodando a aplicação via docker
