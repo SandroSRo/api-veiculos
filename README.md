@@ -15,7 +15,7 @@ Antes de rodar a aplicação, certifique-se de ter o seguinte instalado em sua m
 1. Clone este repositório:
 
 ```bash
-   git clone https://github.com/sandrorock/api-veiculos.git
+   git clone https://github.com/SandroSRo/api-veiculos.git
 ```
 
 2. Navegue até o diretório do projeto:
