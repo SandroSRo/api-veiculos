@@ -32,12 +32,23 @@ Antes de rodar a aplicação, certifique-se de ter o seguinte instalado em sua m
 
 4. Renomeie o arquivo `.env.example` para `.env` e ajuste as variáveis de ambiente conforme necessário.
 
-## Rodando a aplicação DEV
+## Rodando a aplicação DEV 
+
+Necessário ter url no env do mongo local ou cloud
 
 Para rodar a aplicação localmente, execute o seguinte comando:
 
 ```bash
    npm run dev
+```
+
+
+## Rodando a aplicação PROD
+
+Vamos dar o build da aplicação, execute o seguinte comando:
+
+```bash
+   npm run build
 ```
 
 ## Rodando a aplicação via docker

@@ -1,10 +1,11 @@
 import request from "supertest";
-import VehicleModel, { IVehicle } from "../../entities/mongodb/vehicleModel";
+import VehicleModel from "../../entities/mongodb/vehicleModel";
 import app from "../../server";
 
 describe("Tests for route /api/vehicles", () => {
   beforeAll(async () => {
     await VehicleModel.deleteMany({});
+   
   });
 
   it("Should add one vehicule", async () => {
@@ -67,4 +68,6 @@ describe("Tests for route /api/vehicles", () => {
   it("Should failed route", async () => {
     await request(app).get("/api/vehicle").expect(404);
   });
+
+  
 });

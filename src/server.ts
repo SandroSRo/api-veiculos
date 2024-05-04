@@ -13,14 +13,22 @@ const PORT = process.env.PORT
 
 app.use(bodyParser.json());
 
+
+//Conectando a base de dados
 connectDB();
 
 app.use('/api/vehicles',vehicleRoutes);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
+
+
+//Validando se estamos executando como teste
+
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+  });
+}
 
 export default app;
